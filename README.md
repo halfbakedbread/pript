@@ -14,9 +14,7 @@
 
 Pript is a function that prints values to a stream, or to sys.stdout in the style of a receipt. It is based on the Python 3 `print()` built-in function. 
 
-It's meant to be a development aid by allowing you to  print data in a format that is more readable.
-
-Keep in mind this function is only meant to be used in development. You should always consider using a package like `logging` for production.
+This package is meant to be a development aid by allowing you to print data in a format that is more readable. Keep in mind this function is only meant to be used in development. You should always consider using a package like `logging` for production.
 
 ### How different it is from `print()`?
 
@@ -104,6 +102,18 @@ Output:
 THIS    IS     PRIPT
 ```
 
+### With more than three arguments
+
+When using more than three arguments, the behaviour of Pript is exactly the same as `print()`:
+```py
+pript([101], ['Pript'], 'Hello Pript!', ('Hello', 'Pript', '!'))
+```
+
+Output:
+```console
+[101] ['Pript'] Hello Pript! ('Hello', 'Pript', '!')
+```
+
 ### Simple example with a single argument
 
 Suppose we want to center a single string, and style it with a symbol on each side of the text filling the remaining space, and a maximum length of 30 characters:
@@ -148,8 +158,7 @@ def receipt():
 receipt()
 ```
 
-### Output:
-*Will look odd under 40 characters.*
+Output:
 ```console
 ****************************************
         HalfBakedCoffee Company
