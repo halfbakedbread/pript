@@ -1,0 +1,30 @@
+[project]
+name = "pript"
+version = "0.0.1"
+description = "Print values to a stream, or to sys.stdout in the style of a receipt."
+readme = "README.md"
+requires-python = ">=3"
+license = {file = "LICENSE"}
+keywords = ["print", "format", "text", "style", "development"]
+authors = [
+  {name = "Ash Bauer", email = "devhalfbaked@gmail.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Printing",
+  "Topic :: Terminals",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/halfbakedbread/pript"
+"Bug Reports" = "https://github.com/halfbakedbread/pript/issues"
+"Source" = "https://github.com/halfbakedbread/pript/"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
