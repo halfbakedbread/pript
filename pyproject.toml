@@ -1,6 +1,6 @@
 [project]
 name = "pript"
-version = "0.0.1"
+version = "0.0.2"
 description = "Print values to a stream, or to sys.stdout in the style of a receipt."
 readme = "README.md"
 requires-python = ">=3"

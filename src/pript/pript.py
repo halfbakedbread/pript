@@ -41,7 +41,7 @@ def pript(*args, sep=' ', end='\n', file=None, flush=False,
     if snip is None:
         snip = True
     if not isinstance(snip, bool):
-        raise TypeError("snip must be None or an boolean")
+        raise TypeError("snip must be None or a boolean")
     if pos == 'start':
         align = [['<'], ["<", "<"], ["<", "<", "<"]]
     elif pos == 'center':
@@ -54,11 +54,11 @@ def pript(*args, sep=' ', end='\n', file=None, flush=False,
         if sep != ' ':
             fp.write(str(sep[0]) * length)
     elif len(args) == 1:
-        arg = str(args[0])
+        arg_single = str(args[0])
         if snip is True:
-            out_single = arg[0:length]
+            out_single = arg_single[0:length]
         else:
-            out_single = arg
+            out_single = arg_single
         out = '{:{}{}{}}'
         fp.write(out.format(out_single, sep, align[0][0], length))
     elif len(args) == 2:
